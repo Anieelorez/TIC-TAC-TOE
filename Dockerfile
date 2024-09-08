@@ -1,5 +1,5 @@
 # Use the official Node.js 16 image
-FROM node:16
+FROM node:latest
 
 # Set the working directory in the container
 WORKDIR /app
