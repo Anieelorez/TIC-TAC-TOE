@@ -1,0 +1,16 @@
+services:
+  tictac:
+    image: abmsdev.azurecr.io/tictac:latest
+    container_name: tictac
+    pull_policy: always
+    restart: unless-stopped
+    environment:
+      - TZ=Africa/Lagos
+    ports:
+      - "9095:3000"
+    networks:
+      - abms
+
+networks:
+  abms:
+    external: true
